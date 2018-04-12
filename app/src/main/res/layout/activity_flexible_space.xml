@@ -22,7 +22,9 @@
 			android:layout_width="match_parent"
 			android:layout_height="300dp"
 			app:title="@string/flexible_title"
-			app:expandedTitleMarginBottom="94dp"
+			app:expandedTitleMarginBottom="194dp"
+			app:collapsedTitleTextAppearance="@style/just_test"
+
 			app:layout_scrollFlags="scroll|exitUntilCollapsed"
 			app:expandedTitleTextAppearance="@style/CollapsingTextAppearance.Inverse"
 			app:contentScrim="?colorPrimary"

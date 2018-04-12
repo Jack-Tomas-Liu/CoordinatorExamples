@@ -30,6 +30,7 @@ public class FlexibleSpaceExampleActivity extends AppCompatActivity
 	private View mFab;
 	private int mMaxScrollSize;
 	private boolean mIsImageHidden;
+	private Toolbar mToolBar;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class FlexibleSpaceExampleActivity extends AppCompatActivity
 		setContentView(R.layout.activity_flexible_space);
 
 		mFab = findViewById(R.id.flexible_example_fab);
+		mToolBar = (Toolbar) findViewById(R.id.flexible_example_toolbar);
 
 		Toolbar toolbar = (Toolbar) findViewById(R.id.flexible_example_toolbar);
 		toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -47,6 +49,7 @@ public class FlexibleSpaceExampleActivity extends AppCompatActivity
 
 		AppBarLayout appbar = (AppBarLayout) findViewById(R.id.flexible_example_appbar);
 		appbar.addOnOffsetChangedListener(this);
+		mToolBar.setTitleMarginStart(300);
 	}
 
 	@Override
