@@ -35,6 +35,10 @@ public class IOActivityExample extends AppCompatActivity {
 				onBackPressed();
 			}
 		});
+		toolbar.setNavigationIcon(R.drawable.ic_adb_24dp);
+		toolbar.setTitle("我是titlte");
+		toolbar.setLogo(R.drawable.ic_arrow_forward_24dp);
+		System.out.println("我有 expand view " + toolbar.hasExpandedActionView());
 	}
 
 	public static void start(Context c) {
